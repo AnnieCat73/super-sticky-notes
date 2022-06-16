@@ -2,7 +2,16 @@ import React from 'react'
 
 function AddSearch() {
   return (
-    <div>AddSearch</div>
+    <div>
+      <button className="add-btn">+ New Note</button>
+      <input
+        type="text"
+        className="search"
+        placeholder="Type here to seach..."
+
+      />
+
+    </div>
   )
 }
 
