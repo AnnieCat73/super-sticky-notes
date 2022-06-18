@@ -24,4 +24,4 @@ function Note({ id, title, content, deleteNote, editNote }) {
   )
 }
 
-export default Note
+export default Note;

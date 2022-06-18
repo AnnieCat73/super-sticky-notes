@@ -14,17 +14,14 @@ function AddSearch({ addNote, setSearchText, searchText, handleToggleDarkMode })
           placeholder="Type here to seach..."
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
-
         />
-
       </div>
       <button
         className="toggle"
         onClick={() => handleToggleDarkMode((previousDarkMode) => !previousDarkMode)}
       >Toggle Mode</button>
     </div>
-
   )
 }
 
-export default AddSearch
+export default AddSearch;

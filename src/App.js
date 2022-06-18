@@ -58,7 +58,6 @@ function App() {
           searchText={searchText}
           handleToggleDarkMode={setDarkMode}
         />
-
         <ul className="notes-list">
           {notes
             .filter(
@@ -73,14 +72,11 @@ function App() {
                 deleteNote={deleteNote}
                 editNote={editNote}
               />
-
             ))}
         </ul>
-
         <Footer />
       </div>
     </div>
-
   );
 }
 

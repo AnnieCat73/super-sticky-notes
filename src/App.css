@@ -12,7 +12,7 @@ body {
 
 .container {
   width: 100%;
-  padding: 0em;
+  padding: 0;
   min-height: 100vh;
 }
 
@@ -22,11 +22,18 @@ textarea {
   resize: none;
 }
 
+.add-search {
+  padding: 0 10em 0 5em;
+}
+
+.notes-list {
+  padding: 0 5em;
+}
 
 /*Header*/
+
 header {
   background-color: #f5ba13;
-
   padding: 16px 0px 16px 70px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
@@ -37,36 +44,22 @@ header h1 {
   font-weight: 200;
 }
 
-
-/*********************/
 /*AddSearch*/
 
 .add-search {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1em 0;
-  margin: 30px 70px;
+  margin: 30px 0;
 }
 
 .app-controls {
   display: flex;
   align-items: center;
   gap: 1em;
-
 }
 
 .add-btn {
-  /*border-radius: 5px;
-  border-top-color: #ccc;
-  border-bottom-color: #ccc;
-  border-left-color: #ccc;
-  border-right-color: #ccc;
-  cursor: pointer;
-  padding: 8px;
-  font-weight: bold;
-  background-color: #fff;
-  outline: none;*/
   border-radius: 5px;
   cursor: pointer;
   padding: 8px;
@@ -75,15 +68,12 @@ header h1 {
   outline: none;
 }
 
-
 .add-btn:hover {
   background-color: #ededed;
   cursor: pointer;
 }
 
 /*Search*/
-
-
 
 .search {
   background-color: rgb(233, 233, 233);
@@ -100,7 +90,6 @@ header h1 {
 .search:focus {
   outline: none;
 }
-
 
 .toggle {
   background-color: #e1e1e1;
@@ -124,23 +113,20 @@ header h1 {
   color: white;
 }
 
-
-
-
-/*********************/
 /*Note*/
 
 .notes-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
-  padding: 0px 60px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 230px));
+  gap: 1em;
+  margin: 0px;
 }
 
 .note {
   font-family: "Permanent Marker", cursive;
   width: 200px;
   height: 200px;
-  margin: 10px;
+  margin-top: 10px;
   background-color: lightyellow;
   border: 1px solid grey;
   box-shadow: 2px 2px 3px lightgrey;
@@ -182,17 +168,6 @@ header h1 {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*Footer*/
 
 footer {
@@ -201,9 +176,33 @@ footer {
   bottom: 0;
   width: 100%;
   height: 2.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
+  z-index: 1;
 }
 
 footer p {
   color: #ccc;
+}
+
+/*mobile styles*/
+
+@media screen and (max-width: 640px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .add-search {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .app-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle {
+    align-self: flex-start;
+  }
 }
