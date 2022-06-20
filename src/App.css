@@ -192,6 +192,10 @@ footer p {
     margin: 0 auto;
   }
 
+  header h1 {
+    font-size: 1.6rem;
+  }
+
   .add-search {
     flex-direction: column;
     gap: 10px;
