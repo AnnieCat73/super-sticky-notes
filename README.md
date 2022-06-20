@@ -134,8 +134,5 @@ I will continue to practice building apps with a focus on mastering the concept 
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
+Via Netlify
 
