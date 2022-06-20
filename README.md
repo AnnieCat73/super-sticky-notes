@@ -40,11 +40,11 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: https://
+- Live Site URL: https://luxury-monstera-775c7f.netlify.app/
 
 ## My process
 
-1 -Setting  up the App
+1 - Setting  up the App
 
 I first set up the Footer and Header components with css styles.
 
@@ -52,13 +52,13 @@ I added another component called AddSearch in the components folder which is con
 
 The last component I added in the components folder, the Note component, contains the basic jsx and styles that each note will have.
 
-We create an array to store the notes.Since this array will change depending on how many notes we have we will need to use the useState hook. This notes array will be initialised to an empty array. 
+We create an array to store the notes. Since this array will change depending on how many notes we have we will need to use the useState hook. This notes array will be initialised to an empty array. 
 
 Inside the return function in the App.js we add an ul container that will hold the notes from the notes array. We map through each note and render a Note component which contains an id and the content inside each note, i.e the title and its content. These will be destructured and passed as props to the Note component and added as the values. 
 
 The onChange eventhandler will grab the typed input of the title and the content via e.target.value.
 
-2 -Tie the functionalities together:
+2 - Tie the functionalities together:
 
 Add a note
 
@@ -68,7 +68,7 @@ Edit a note
 
 We can edit a note we have saved with the function editNote that we define in App.js. This function will be passed as a prop, editNote, to the Note component and called in the onChange event handler of both the title or the content area.
 
-The editNote function takes in the id of the note, a field and the text. It will be set into state via setNotes. It then maps over all previous notes and checks if the id of the note has the same id and if the field is equal to “title”. If so then it will return a new note with the new edited text. If field is not equal to “title”, i.e. it's equal to “content” then it will return the note with the new content text. Else if the id of the note is the same it will just return the note, i.e it’s not been edited.
+The editNote function takes in the id of the note, a field and the text. It will be set into state via setNotes. It then maps over all previous notes and checks if the id of the note has the same id and if the field is equal to “title”. If so then it will return a new note with the new edited text. If field is not equal to “title”, i.e. it's equal to “content” then it will return the note with the new content text. Else if the id of the note is the same it will just return the note, i.e it has not been edited.
 
 Delete a note 
 
@@ -119,11 +119,11 @@ I feel more confident with using functional components and setting 'things' in s
 
 It was a good exercise to see how we can use the useEffect hook for saving data, 'the notes', to localStorage. 
 
-I got a lot of practice with passing functions and props down and up the component tree. I see this as probably one of the fundamental skills you need to master to fully understand how React.js works!
+I got a lot of practice with passing functions and props down and up the component tree. I see this as probably one of the fundamental skills you need to master fully to understand how React.js works!
 
 ### Continued development
 
-I will continue to practice building apps with a focus on mastering passing functions from child up to the parent component. That's the part I struggled with most and I intend to work on this until I feel it's second nature!
+I will continue to practice building apps with a focus on mastering the concept of passing functions from child up to the parent component. That's the part I struggled with most and I intend to work on this until I feel it's second nature!
 
 
 ## Author
@@ -138,4 +138,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
