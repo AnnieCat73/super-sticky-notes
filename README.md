@@ -15,7 +15,7 @@
 SUPER STICKY NOTES 
 
 I originally coded this app with class based components. It was one of the projects I did in my curriculum for my React.js class at Skillcrush.com. You can see the original code here: 
-  https://codesandbox.io/s/l12-build-your-big-component-deletesavenotesstickynotesui9-x1cks
+[Sticky-Notes] (https://codesandbox.io/s/l12-build-your-big-component-deletesavenotesstickynotesui9-x1cks)
 
 I decided that it would be good to modernise the code for the app with functional components, useState and useEffect hooks. I changed it slightly and added a dark mode feature and updated the CSS and the color scheme. I used CSS grid to make the list of notes responsive. 
 
